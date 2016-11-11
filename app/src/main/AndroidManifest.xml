@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rafa.com.udacity.audioplayer">
+<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".PlayerAudio"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+         <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Library"
+            android:label="Libray"/>
+      <activity
+         android:name=".Roxette"
+         android:label="Roxette"/>
+       <activity android:name=".AceofBase"
+           android:label="Ace Of Base"/>
+        <activity android:name=".TakeThat"
+            android:label="Take That"/>
+
+    </application>
+
+</manifest>

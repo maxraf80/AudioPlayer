@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="23sp"
+        android:layout_marginLeft="25sp"
+        android:textColor="@color/textColor"
+        android:id="@+id/song"
+        android:textStyle="bold|italic"
+        android:text="Song Title"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:layout_marginLeft="25sp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold|italic"
+        android:text="It displays the name of the played song , so before we set a Runnable action to set the song during its playing "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:background="@drawable/previous"
+                android:layout_width="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/previustrack"/>
+
+           <Button
+                android:background="@drawable/play"
+                android:layout_width="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:id="@+id/play"/>
+
+            <Button
+                android:background="@drawable/forwardtwo"
+                android:layout_width="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/nextTrack"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+        <TextView
+            android:text="This button sets the song 5 second before the actual music"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:textColor="@color/textColor"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.37" />
+
+        <TextView
+            android:text="This button plays and stops the music calling the mediaplayer library"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:textColor="@color/textColor"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:text="This button sets the song 5 second after the actual music calling to the audioplayer library"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:textColor="@color/textColor"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.30"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30sp"
+        android:textColor="@color/textColor"
+        android:id="@+id/music"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+         />
+
+      </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It displays the differents albums in the player"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30sp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

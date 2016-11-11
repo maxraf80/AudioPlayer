@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Roxette Album"
+    android:id="@+id/roxette"
+    android:textSize="25dp"
+    android:layout_margin="25dp"
+    android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ace of Base Album"
+        android:textSize="25sp"
+        android:id="@+id/aceofbase"
+        android:layout_margin="25dp"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take That Album"
+        android:id="@+id/takethat"
+        android:textSize="25sp"
+        android:layout_margin="25sp"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In this three TextViews, the user can press any of them to go to any of the albums.
+        The user can set the next song by clicking it's name"
+        android:textSize="15dp"
+        android:layout_margin="25sp"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>
